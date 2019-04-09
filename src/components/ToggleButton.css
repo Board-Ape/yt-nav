@@ -1,0 +1,22 @@
+.buttonContainer {
+    height: 100px;
+    width: 200px;
+    border: 1px solid black;
+    margin: 20px auto;
+    border-radius: 
+}
+
+.buttonOn {
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+    background-color: blue;
+}
+
+.buttonOff {
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+    float: right;
+    background-color: lightblue;
+}
