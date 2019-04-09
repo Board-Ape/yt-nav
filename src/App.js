@@ -4,13 +4,23 @@ import './App.css';
 import ToggleButton from './components/ToggleButton';
 
 class App extends Component {
+  state = {
+    button: false
+  }
+
+  handleClick = () => {
+    this.setState({
+      button: !this.state.button
+    })
+  }
+
   render() {
     return (
       <div className="App">
         <header className="App-header">
           <h1>Toggle Button</h1>
         </header>
-        <ToggleButton />
+        <ToggleButton buttonState={this.state.button} handleClick={this.handleClick}/>
       </div>
     );
   }
